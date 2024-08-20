@@ -1,0 +1,34 @@
+#debug-scene {
+  position: relative;
+}
+
+.sprite-viewer-sprite #debug-scene {
+  width: 800px;
+  height: 800px;
+  overflow: hidden;
+  border: var(--border-thick);
+  border-radius: 4px;
+}
+
+.sprite-viewer-sprite #debug-scene canvas {
+  position: relative;
+  left: -580px;
+  top: 0;
+}
+
+#debug-scene #status-message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: white;
+  background-color: black;
+  z-index: 2;
+}
+
+#debug-scene-controls {
+  position: fixed;
+  top: 1em;
+  right: 1em;
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,36 @@
+.synergies-container {
+  display: flex;
+  flex-flow: column;
+  color: #fff;
+  background-color: var(--color-bg-primary);
+  font-size: 1em;
+  overflow-y: auto;
+}
+
+#game-wrapper .synergies-container {
+  position: absolute;
+  left: 0.5%;
+  top: 9%;
+  max-height: 70%;
+  padding: 0;
+  background-color: var(--color-bg-primary);
+}
+
+.synergies-header {
+  padding: 0.5em;
+  margin: 0;
+  text-align: center;
+}
+
+@media (aspect-ratio < 4/3) {
+  #game-wrapper .synergies-container {
+    max-height: 70%;
+  }
+}
+
+@media(width <= 1280px) {
+  #game-wrapper .synergies-container {
+    transform: scale(0.8);
+    transform-origin: top left;
+  }
+}

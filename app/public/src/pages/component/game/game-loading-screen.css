@@ -1,0 +1,80 @@
+.game-loading-screen {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: black;
+  text-align: center;
+}
+
+.game-loading-screen li {
+  list-style: none;
+}
+
+.game-loading-screen .loading-bar {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20vw;
+  right: 20vw;
+  color: white;
+}
+
+
+.game-loading-screen .loading-bar p {
+  text-align: center;
+  font-size: 28pt;
+}
+
+.game-loading-screen .loading-hint {
+  position: absolute;
+  width: 14vw;
+  right: 2vw;
+  bottom: 0;
+}
+
+.game-loading-screen .loading-hint img {
+  width: 80%;
+}
+
+.game-loading-screen .error {
+  color: red;
+}
+
+.game-loading-screen button {
+  margin: auto;
+}
+
+.game-loading-screen footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 1rem;
+  color: white;
+  font-size: 1rem;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #ffffff;
+	border-radius: .4em;
+  padding: 0.5em 0.25em;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #ffffff;
+	border-bottom: 0;
+	border-left: 0;
+	margin-left: -10px;
+	margin-bottom: -19px;
+}

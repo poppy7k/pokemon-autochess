@@ -1,0 +1,131 @@
+#game-stage-info {
+  position: absolute;
+  top: 0.5%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 40%;
+  max-width: 100vw;
+  color: white;
+  border-radius: 12px 12px 0 0;
+  padding: 1px 0.5em;
+  font-size: 1em;
+  gap: 0.5em;
+}
+
+#game-stage-info p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#game-stage-info .stage-information {
+  text-align: center;
+}
+
+#detail-stage p {
+  margin: 0 0.25em;
+}
+
+#game-stage-info .players-information {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 0.5em;
+}
+
+#game-stage-info .players-information:not(.has-opponent) {
+  flex: 0;
+}
+
+#game-stage-info .player-information {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  gap: 5px;
+  overflow: hidden;
+}
+
+#game-stage-info .player-information img {
+  width: 1.5em;
+  height: 1.5em;
+  margin: auto;
+  align-self: center;
+}
+
+#game-stage-info .player-information .player-title {
+  margin: 0;
+  color: var(--color-fg-gold);
+}
+
+#game-stage-info .player-information .player-name {
+  margin-left: 0.25em;
+  color: white;
+  text-align: center;
+}
+
+.game-stage-path {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.game-stage-path .stage-path {
+  position: relative;
+  background-color: var(--color-bg-secondary);
+  border-radius: 8px;
+  border: 4px solid transparent;
+}
+
+.game-stage-path .stage-path.current {
+  background-color: #109fff;
+}
+
+.game-stage-path .stage-path.current::before {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: 100%;
+  left: calc(0.75em - 10px);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid black;
+}
+
+.game-stage-path .stage-path.victory {
+  border-color: #4aa52e;
+}
+
+.game-stage-path .stage-path.defeat {
+  border-color: #8c2022;
+}
+
+.game-stage-path .stage-path.draw {
+  border-color: #cc6a28;
+}
+
+.game-stage-path .stage-path img {
+  display: block;
+  height: 1.5em;
+  width: 1.5em;
+}
+
+#game-stage-info .weather-information > img,
+#game-stage-info .map-information > img {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+#detail-weather p,
+#detail-map p {
+  white-space: pre-line;
+  margin: 0 0.25em;
+  line-height: 40px;
+}

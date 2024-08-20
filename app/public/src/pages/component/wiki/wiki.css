@@ -1,0 +1,342 @@
+#wiki-page {
+  color: white;
+  width: min(95vw, 1800px);
+}
+
+#wiki-page ul {
+  padding: 0;
+}
+
+#wiki-page li {
+  list-style: none;
+}
+
+#wiki-page li[role="tab"] {
+  text-transform: uppercase;
+}
+
+#wiki-page li[role="tab"] > img.pokemon-portrait {
+  display: block;
+  margin: -6px -12px;
+}
+
+#wiki-page .wiki-types li[role="tab"] {
+  padding: 4px 5px;
+  line-height: 40px;
+  min-width: 48px;
+  text-align: center;
+}
+
+#wiki-page > .react-tabs > .react-tabs__tab-panel {
+  height: 75vh;
+  padding: 0.5em 0 40px 0;
+  overflow-y: auto;
+}
+
+#wiki-page .pokemon-name {
+  text-transform: capitalize;
+}
+
+#wiki-page .pokemon-portrait {
+  margin: 2px;
+}
+
+#wiki-page .pokemon-portrait > img {
+  display: block;
+  border-radius: 2px;
+}
+
+#wiki-page .wiki-pokemons .pokemon-typeahead {
+  float: right;
+  font-size: 80%;
+  padding: 0px 36px 0px 16px;
+}
+
+#wiki-page p.description {
+  line-height: 1.2em;
+}
+
+#wiki-page .wiki-faq summary {
+  color: var(--color-fg-green);
+}
+
+#wiki-page .wiki-faq details {
+  margin-bottom: 0.5em;
+}
+
+
+#wiki-page .wiki-status,
+#wiki-page .wiki-stat {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0.5em;
+}
+
+#wiki-page .wiki-status li {
+  list-style: none;
+  display: grid;
+  grid-template: auto 1fr / 30% 1fr;
+  padding: 0.5em;
+  min-height: calc(122px + 1em);
+  column-gap: 0.5em;
+}
+
+#wiki-page .wiki-status h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#wiki-page .wiki-stat li {
+  list-style: none;
+  display: grid;
+  grid-template: auto 1fr / 80px 1fr;
+}
+
+#wiki-page .wiki-status li > img,
+#wiki-page .wiki-stat li > img {
+  grid-row: 1/3;
+  width: 100%;
+}
+
+#wiki-page .wiki-status li > img {
+  border-radius: 8px;
+  border: 2px solid #000000;
+}
+
+#wiki-page .wiki-status li .status-label {
+  white-space: initial;
+}
+
+#wiki-page .wiki-stat p:first-of-type {
+  font-size: 120%;
+  margin: 0.25em 0;
+}
+
+#wiki-page .wiki-tutorials ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0;
+}
+
+#wiki-page .wiki-tutorials h3 {
+  margin: 0;
+}
+
+#wiki-page .wiki-tutorials iframe {
+  width: 560px;
+  height: 315px;
+  max-width: 100%;
+}
+
+#wiki-page .wiki-types .pokemon-portrait {
+  display: inline-block;
+}
+
+#wiki-pokemons-all section {
+  border-top: 4px solid currentColor;
+}
+
+#wiki-types-all section {
+  border-top: 4px solid #40404080;
+}
+
+#wiki-pokemons-all section ul,
+#wiki-types-all section ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#wiki-weather > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0.5em;
+}
+
+#wiki-weather > ul > .my-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+#wiki-ability h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+#wiki-ability > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0.5em;
+  margin: 0;
+}
+
+#wiki-ability > ul > .my-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#wiki-dungeon > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  gap: 0.5em;
+}
+
+#wiki-dungeon > ul > .my-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  position: relative;
+}
+
+#wiki-dungeon > ul > .my-box > img {
+  border: 1px solid #000000;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0 #00000060;
+  image-rendering: pixelated;
+  height: 250px;
+  object-fit: cover;
+}
+
+#wiki-dungeon .my-box h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#wiki-dungeon .wiki-dungeon-regional-mons {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 1em;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap
+}
+
+#wiki-weather .my-box header {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+#wiki-weather .my-box h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 2rem;
+}
+
+#wiki-weather .my-box header .weather-icon {
+  height: 40px;
+}
+
+#wiki-weather .my-box p {
+  margin: 0;
+  white-space: pre-line;
+}
+
+#wiki-weather .my-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0;
+  margin: 0;
+}
+
+#wiki-ability .my-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0;
+}
+
+#wiki-ability .my-box p {
+    font-size: 0.8em;
+}
+
+#wiki-items {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#wiki-items ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  padding: 0;
+}
+
+#wiki-items .berries {
+  display: grid;
+  grid-template-columns: repeat(5, min-content);
+}
+
+#wiki-items .artificial,
+#wiki-items .weather-rocks,
+#wiki-items .shiny,
+#wiki-items .special {
+  max-width: 520px;
+}
+
+#wiki-items img.item {
+  width: 50px;
+  height: 50px;
+  cursor: var(--cursor-hover);
+  margin: 8px;
+}
+
+#wiki-items img.tree {
+  image-rendering: pixelated;
+  width: 50px;
+  margin: -8px 8px 30px 8px;
+}
+
+#wiki-items th,
+#wiki-items td:first-child {
+  background-color: var(--color-bg-secondary);
+}
+
+#wiki-items tr:nth-child(odd),
+#wiki-items td:nth-child(n + 2) {
+  background-color: var(--color-bg-primary);
+}
+
+#wiki-data {
+  padding: 0 0.5em;
+}
+
+#wiki-data table {
+  text-align: center;
+  table-layout: fixed;
+  background-color: var(--color-bg-secondary);
+}
+
+#wiki-data thead {
+  border-bottom: 2px solid currentColor;
+}
+
+#wiki-data th,
+#wiki-data td {
+  padding: 0 0.5em;
+}
+
+#wiki-data-tiers-by-level th,
+#wiki-data-booster-rarity-probability th {
+  width: 10ch;
+}
+
+@media (width <= 960px) {
+  #wiki-items {
+    display: block;
+  }
+
+  #wiki-items img.item {
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+  }
+
+  #wiki-page .wiki-types li[role="tab"] {
+    padding: 4px;
+  }
+}

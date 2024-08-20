@@ -1,0 +1,51 @@
+#pokemon-collection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+#pokemon-collection .pokemon-carousel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: center;
+  overflow-y: scroll;
+  max-height: 65vh;
+}
+
+#pokemon-collection header {
+  display: flex;
+  align-content: center;
+  gap: 1vw;
+  padding: 5px 1em;
+}
+
+#pokemon-collection header label {
+  margin-bottom: 0;
+}
+
+#pokemon-collection .unown-icon {
+  margin: -28px;
+}
+
+.pokemon-collection-tabs {
+  display: flex;
+  align-items: center;
+  max-width: 90vw;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-left: 0;
+  margin: 0;
+}
+
+.pokemon-collection-tabs li {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+
+#pokemon-collection .bubbly {
+  height: 50px;
+  font-size: 22px;
+}

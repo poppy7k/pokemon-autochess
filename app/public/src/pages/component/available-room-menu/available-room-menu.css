@@ -1,0 +1,42 @@
+.room-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-menu .subtitle {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 1em;
+}
+
+.room-menu .tab-tournament.react-tabs__tab-panel--selected {
+  padding: 0.5em 0;
+}
+
+.room-menu .react-tabs__tab-panel--selected ul {
+  list-style: none;
+  padding: 0;
+  flex: 1;
+}
+
+.room-menu .create-room-button {
+  width: 100%;
+  margin: 0.5em auto 0 auto;
+}
+
+.room-menu .rank.icon {
+  width: 50px;
+}
+
+.room-menu > ul {
+  padding: 0;
+  margin: 0;
+  max-height: calc(100% - 10em);
+  overflow: auto;
+  flex: 1;
+}
+
+.room-menu li {
+  list-style: none;
+}

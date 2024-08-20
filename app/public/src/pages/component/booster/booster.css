@@ -1,0 +1,49 @@
+#boosters-page {
+  position: relative;
+  height: 90vh;
+  width: 1800px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+#boosters-page p.help {
+  font-size: 200%;
+  text-shadow: 2px 2px 0 black;
+}
+
+#boosters-page .actions {
+  text-align: center;
+  position: relative;
+  bottom: 1em;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+#boosters-page .actions .booster-count {
+  font-size: 200%;
+}
+
+#boosters-page .actions button {
+  margin: auto;
+}
+
+#boosters-page .actions img {
+  height: 128px;
+  width: 128px;
+}
+
+.boosters-content {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  width: 100%;
+}
