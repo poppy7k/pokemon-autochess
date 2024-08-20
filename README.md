@@ -1,16 +1,16 @@
 # Pokemon Auto Chess
 
+This is Forked version from [pokemonAutoChess](https://github.com/keldaanCommunity/pokemonAutoChess) by keldaanCommunity
+
+##This version support only Thai language!
+
 Non profit game. For fans, by fans.
 
 ## All rights to the Pokemon Company. Pokemon Auto Chess can stop at any time, whenever The Pokemon Company wants.
 
-[![translation badge](https://inlang.com/badge?url=github.com/keldaanCommunity/pokemonAutoChess)](https://inlang.com/editor/github.com/keldaanCommunity/pokemonAutoChess?ref=badge)
-
 ![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
 
-Play: [https://pokemon-auto-chess.com](https://pokemon-auto-chess.com/)
-
-Source: [https://github.com/keldaanCommunity/pokemonAutoChess](https://github.com/keldaanCommunity/pokemonAutoChess)
+Play: currently down
 
 ## Getting started
 
@@ -129,5 +129,3 @@ With VS Code, use Biome for formatting and linting and Inlang for translations m
 - Bind the Inlang: Extract Message on a keyboard touch, for example (²)
 - Select the string you want to translate. Press ², a prompt will ask the id you want for this string. It'll add the corresponding entry in the english translation file.
 - Once you are finished, you can run npm run translate to machine translate the missing translations
-
-Please note that we only support the english language. Other languages are managed by the community.
